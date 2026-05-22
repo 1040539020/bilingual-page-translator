@@ -1,0 +1,92 @@
+@import url("../popup/popup.css");
+
+body {
+  min-width: 0;
+}
+
+.options-shell {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 24px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 22px 0 16px;
+  overflow-x: auto;
+}
+
+.tab {
+  min-width: 112px;
+}
+
+.tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.settings-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+}
+
+.field {
+  font-size: 13px;
+}
+
+.switch-row,
+.service-row {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+}
+
+.switch-row input {
+  height: 20px;
+  width: 20px;
+}
+
+.service-list {
+  display: grid;
+  gap: 8px;
+}
+
+.service-row {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  grid-template-columns: 1fr auto auto auto;
+  padding: 8px;
+}
+
+.shortcut-grid {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+}
+
+kbd {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  padding: 4px 8px;
+}
+
+@media (max-width: 640px) {
+  .options-shell {
+    padding: 16px;
+  }
+
+  .service-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
