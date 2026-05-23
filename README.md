@@ -1,3 +1,4 @@
+vibe-coding
 # Bilingual Page Translator
 
 A free open-source immersive translation extension for reading web pages in bilingual, translation-only, or hover modes.
@@ -79,19 +80,6 @@ npm test
 npm run build:chrome
 ```
 
-Useful scripts:
-
-- `npm run dev`: webpack watch build.
-- `npm run build:edge`: build Edge output.
-- `npm run build:firefox`: build Firefox output.
-- `npm run package:zip`: package a release ZIP.
-- `npm run ci`: typecheck, test, and Chrome build.
-
-## Privacy
-
-The extension processes page text only when the user starts translation or enables auto-translation. Text is sent only to the selected provider configured by the user. API keys are stored in browser extension storage. Anonymous analytics are disabled by default.
-
-Do not commit API keys, access tokens, or private endpoint credentials to this repository.
 
 ## Project Structure
 
